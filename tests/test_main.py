@@ -14,6 +14,7 @@ def test_add():
     assert response.json()["result"] == 7
 
 # add to tests/test_main.py
+# A test comment
 def test_health():
     response = client.get("/health")
     assert response.json() == {"status": "ok"}
