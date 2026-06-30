@@ -10,3 +10,8 @@ def root():
 @app.get("/add")
 def add(a: int, b: int):
     return {"result": a + b}
+
+# add to app/main.py
+@app.get("/health")
+def health():
+    return {"status": "ok"}
